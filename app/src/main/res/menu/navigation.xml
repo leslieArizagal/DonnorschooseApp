@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_palette"
+        android:title="Music and The Arts" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_deport"
+        android:title="Health and Sports" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_translate"
+        android:title="Literacy and Language" />
+
+    <item
+        android:id="@+id/penultimo"
+        android:icon="@mipmap/ic_museum"
+        android:title="History and Civics" />
+    <item
+        android:id="@+id/ultimo"
+        android:icon="@mipmap/ic_chart"
+        android:title="Math and Science" />
+</menu>

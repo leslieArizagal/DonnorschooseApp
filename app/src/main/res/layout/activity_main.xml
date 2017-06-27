@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.donorschoose.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageDonor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/donors_gray"/>
+
+
+        <LinearLayout
+            android:id="@+id/linerSearch"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="top"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv">
+                <LinearLayout
+                    android:id="@+id/liner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:hint="Search" />
+
+
+                    <ImageButton
+                        android:id="@+id/search_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_search_black_24dp"
+
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+          <ListView
+              android:id="@+id/lvProposal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

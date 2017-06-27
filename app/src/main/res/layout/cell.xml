@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cell">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/photo"
+                    android:src="@drawable/image1"
+                    android:layout_marginRight="1dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/photo"
+                    android:layout_alignParentTop="true"
+                    android:text="Start with Art!"
+                    android:textColor="#20a1d5"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/shortDescription"
+                    android:layout_toRightOf="@+id/photo"
+                    android:layout_below="@+id/title"
+                    android:text="My students need crayons, watercolor pencils, beads, and other craft supplies."
+                    android:paddingLeft="3dp"
+                    android:textSize="12sp"
+                    />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:gravity="right"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacherName"
+                android:paddingLeft="3dp"
+                android:textStyle="bold"
+                android:text="Ms. Bonek"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/schoolName"
+                android:paddingLeft="3dp"
+                android:textStyle="italic"
+                android:text="Brentwood Academy - E Palo Alto, CA"
+                android:textSize="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingRight="3dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/donorN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 "
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/donor"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:paddingLeft="3dp"
+                    android:text="DONORS SO FAR"
+                    />
+                <TextView
+                    android:id="@+id/needN"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="    74"
+                    />
+                <TextView
+                    android:id="@+id/need"
+                    android:paddingLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:text=" STILL NEEDED"
+                    />
+                <TextView
+                    android:id="@+id/goalN"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="    74"
+                    />
+                <TextView
+                    android:id="@+id/goal"
+                    android:paddingLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:text=" GOAL"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
